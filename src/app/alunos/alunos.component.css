@@ -1,0 +1,81 @@
+.box {
+    display:flex;
+    align-items:normal
+}
+
+.container {
+    font-size: 20px;
+    width: 100%;
+}
+
+.pesquisa {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.button {
+    display: flex;
+}
+.notas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+th {
+    height: 46px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235 235 235);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+tbody {
+    width: 100%;
+}
+
+td {
+    height: 46px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+@media (max-width: 560px){
+    .box-notas-linhas {
+        flex-direction: column;
+    }
+
+    button {
+        height: 28px;
+        width: 120px;    
+    }
+
+    th {
+        font-size: 12px;
+    }
+}

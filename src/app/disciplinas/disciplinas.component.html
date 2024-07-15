@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="box">
+    <app-sidebar></app-sidebar>
+
+    <div class="container">
+        <div class="pesquisa">
+            <h3>Histórico de matrículas em aberto - aluno: <span>{{ alumni }}</span></h3>
+        </div>
+
+        <section class="notas" *ngFor="let semestre of semestres">
+            <div class="box-notas-linhas">
+                <h4>Matrículas para: {{ semestre.semestre }}</h4>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let disciplina of semestre.disciplinas">
+                    <tr>
+                        <td>{{ disciplina }}</td>
+                        <td>{{ semestre.curso }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</div>

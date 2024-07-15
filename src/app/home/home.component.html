@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="box">
+    <app-sidebar></app-sidebar>
+
+    <div class="container">
+        <h1>Portal do Aluno</h1>
+        <h3>Seja bem-vindo <span>{{ aluno }}</span></h3>
+
+        <fieldset class="atividades">
+            <legend>Atividades pendentes</legend>
+            <div class="card" *ngFor="let atividade of atividades">
+                <p>{{ atividade }}</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="disciplinas">
+            <legend>Minhas disciplinas</legend>
+            <div class="card" *ngFor="let disciplina of disciplinas">
+                <p>{{ disciplina }}</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="extras">
+            <legend>Cursos extras</legend>
+            <div class="card" *ngFor="let curso of extras">
+                <p>{{ curso }}</p>
+            </div>
+        </fieldset>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="box">
+    <app-sidebar></app-sidebar>
+    <div class="container">
+        <form #acaoLogin="ngForm">
+            <fieldset>
+                <label for="nome">Nome completo: </label>
+                <input type="text" name="nome" id="nome" [(ngModel)]="cadastro.nome" #email="ngModel"
+                    [ngModelOptions]="{standalone: true}" required>
+                <br>
+                <br>
+                <label for="cpf">CPF: </label>
+                <input type="text" name="cpf" id="cpf" [(ngModel)]="cadastro.cpf" #senha="ngModel"
+                    [ngModelOptions]="{standalone: true}" required>
+                <br>
+                <br>
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" id="email" [(ngModel)]="cadastro.email" #senha="ngModel"
+                    [ngModelOptions]="{standalone: true}" required>
+                <br>
+                <br>
+                <label for="celular">Telefone (cel.): </label>
+                <input type="text" name="celular" id="celular" [(ngModel)]="cadastro.celular" #senha="ngModel"
+                    [ngModelOptions]="{standalone: true}" required>
+                <br>
+                <br>
+                <label for="curso">Curso: </label>
+                <input type="text" name="curso" id="curso" [(ngModel)]="cadastro.curso" #senha="ngModel"
+                    [ngModelOptions]="{standalone: true}" required>
+                <br>
+                <br>
+                <button type="button" class="salvar" (click)="salvar()">Salvar</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
