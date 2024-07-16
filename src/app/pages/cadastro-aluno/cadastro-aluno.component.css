@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 10px;
+    width: 40%;
+}
+
+.box {
+    display:flex;
+    align-items:normal
+}
+
+form {
+    padding: 10px;
+}
+
+button {
+    padding: 5px;
+}
