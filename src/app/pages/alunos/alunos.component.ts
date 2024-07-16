@@ -20,7 +20,7 @@ interface DadosAluno {
   imports: [CommonModule, RouterModule,
      HeaderComponent, SidebarComponent],
   templateUrl: './alunos.component.html',
-  styleUrl: './alunos.component.css'
+  styleUrl: './alunos.component.scss'
 })
 
 

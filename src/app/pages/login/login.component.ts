@@ -9,7 +9,7 @@ import { LoginService } from '../../shared/services/login.service';
   standalone: true,
   imports: [RouterLink, FormsModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.scss'
 })
 export class LoginComponent {
   constructor(private loginService: LoginService) { }

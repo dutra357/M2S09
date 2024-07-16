@@ -9,7 +9,7 @@ import { HeaderComponent } from '../../shared/header/header.component';
   standalone: true,
   imports: [CommonModule, HeaderComponent, SidebarComponent],
   templateUrl: './disciplinas.component.html',
-  styleUrl: './disciplinas.component.css'
+  styleUrl: './disciplinas.component.scss'
 })
 export class DisciplinasComponent {
 

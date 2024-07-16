@@ -10,7 +10,7 @@ import { HeaderComponent } from '../../shared/header/header.component';
   standalone: true,
   imports: [FormsModule, RouterLink, HeaderComponent, SidebarComponent],
   templateUrl: './cadastro-aluno.component.html',
-  styleUrl: './cadastro-aluno.component.css'
+  styleUrl: './cadastro-aluno.component.scss'
 })
 export class CadastroAlunoComponent {
 

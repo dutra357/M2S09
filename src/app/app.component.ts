@@ -10,7 +10,7 @@ import { LoginComponent } from "./pages/login/login.component";
   standalone: true,
   imports: [RouterOutlet, RouterLink, CommonModule, LoginComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'M2S07';

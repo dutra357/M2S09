@@ -7,7 +7,7 @@ import { LoginService } from '../../../app/shared/services/login.service';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 

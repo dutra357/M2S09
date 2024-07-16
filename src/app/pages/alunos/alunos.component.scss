@@ -15,8 +15,9 @@
     margin-top: 30px;
 }
 
-.button {
+button {
     display: flex;
+    margin: 2px;
 }
 .notas {
     display: flex;
@@ -63,6 +64,10 @@ td {
     align-items: center;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(204, 204, 204);
+}
+
+.campos:hover {
+    color: green;
 }
 
 @media (max-width: 560px){

@@ -11,7 +11,7 @@ import { HeaderComponent } from '../../shared/header/header.component';
   standalone: true,
   imports: [RouterLink, CommonModule, HeaderComponent, SidebarComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   aluno = "João Silveira";

@@ -8,7 +8,7 @@ import { Router, RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink, FormsModule, CommonModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 
