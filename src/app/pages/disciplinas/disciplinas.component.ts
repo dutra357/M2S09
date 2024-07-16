@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../../shared/components/header/header.component';
-import { SidebarComponent } from '../../../shared/components/sidebar/sidebar.component';
+import { SidebarComponent } from '../../shared/sidebar/sidebar.component';
 import { DisciplinasService } from '../../shared/services/disciplinas.service';
-
+import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-disciplinas',

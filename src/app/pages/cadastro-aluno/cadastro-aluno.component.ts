@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { HeaderComponent } from '../../../shared/components/header/header.component';
-import { SidebarComponent } from '../../../shared/components/sidebar/sidebar.component';
+import { SidebarComponent } from '../../shared/sidebar/sidebar.component';
 import { AlunosService } from '../../shared/services/alunos.service';
-
+import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-cadastro-aluno',

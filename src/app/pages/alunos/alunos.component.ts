@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { HeaderComponent } from '../../../shared/components/header/header.component';
-import { SidebarComponent } from '../../../shared/components/sidebar/sidebar.component';
 import { AlunosService } from '../../shared/services/alunos.service';
+import { HeaderComponent } from '../../shared/header/header.component';
+import { SidebarComponent } from '../../shared/sidebar/sidebar.component';
 
 interface DadosAluno {
   nome: string,
@@ -55,7 +55,4 @@ export class AlunosComponent {
   editar(aluno: any) {
     this.router.navigate(['/cadastroAlunos'], { state: {aluno} });
   }
-
-
-
 }
