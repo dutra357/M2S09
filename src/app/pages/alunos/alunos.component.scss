@@ -66,21 +66,7 @@ td {
     border: 1px solid rgb(204, 204, 204);
 }
 
-.campos:hover {
+tr:hover {
     color: green;
-}
-
-@media (max-width: 560px){
-    .box-notas-linhas {
-        flex-direction: column;
-    }
-
-    button {
-        height: 28px;
-        width: 120px;    
-    }
-
-    th {
-        font-size: 12px;
-    }
+    font-weight: bold;
 }

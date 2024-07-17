@@ -11,7 +11,11 @@ import { LoginService } from '../../../app/shared/services/login.service';
 })
 export class HeaderComponent {
 
-  constructor(private router: Router, private loginService: LoginService) { }
+  usuarioLogado!: {email: string, senha: string}
+
+  constructor(private router: Router, private loginService: LoginService) { 
+    this.usuarioLogado = this.loginService.usuarioLogado;
+  }
 
 
   sair() {

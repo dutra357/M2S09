@@ -1,10 +1,9 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
     margin: 10px;
     padding: 5px;
-    width: 100%;
 }
 
 .box {
@@ -13,20 +12,20 @@
 }
 
 .atividades, .disciplinas, .extras {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
     margin-top: 30px;
+    width: auto;
 }
 
 .card {
     height: 200px;
     width: 200px;
-    border: 1px solid green;
+    border: 1px solid black;
     margin: 10px;
     padding: 5px;
-    max-width: 100%;
+    max-width: auto;
 }
 
 .card:hover {
@@ -37,6 +36,37 @@ legend {
     font-weight: bold;
 }
 
-span {
-    color: green;
+
+@media (max-width: 480px) {
+    .atividades, .disciplinas, .extras {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        display: inline;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .atividades, .disciplinas, .extras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .atividades, .disciplinas, .extras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .atividades, .disciplinas, .extras {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class LoginService {
 
+  usuarioLogado!: {email: string, senha: string}
+
   constructor() { }
 
   login(usuario: {email: string, senha: string}): boolean {
