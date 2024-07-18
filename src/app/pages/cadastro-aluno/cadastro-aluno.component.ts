@@ -39,8 +39,6 @@ export class CadastroAlunoComponent {
       && this.cadastro.email && this.cadastro.celular
       && this.cadastro.curso) {
 
-        //localStorage.setItem("novoAluno", JSON.stringify(this.cadastro))
-
         this.alunosService.cadastrarAluno(this.cadastro);
         
         this.router.navigate(["alunos"]);
