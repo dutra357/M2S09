@@ -1,7 +1,12 @@
 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    padding: 20px;
-    margin: 10px;
+.box {
+    padding: 50px;
+    margin: 50px;
     height: inherit;
     width: 300px;
     font-size: 18px;

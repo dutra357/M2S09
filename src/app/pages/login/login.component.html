@@ -1,36 +1,24 @@
-<h3>Login de usuário</h3>
 <div>
-    <form #acaoLogin="ngForm">
-
+    <div class="box">
+        <h3>Seja bem-vindo!</h3>
         <fieldset>
-            <label for="login">Login: </label>
-            <input type="email" name="login" id="login" [(ngModel)]="login.email" #email="ngModel"
-                [ngModelOptions]="{standalone: true}" required>
-            <br>
-            <br>
-
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha" [(ngModel)]="login.senha" #senha="ngModel"
-                [ngModelOptions]="{standalone: true}" required>
-
-            <button type="button" class="entrar" (click)="entrar()">Entrar</button>
-            <button type="button" class="entrar" (click)="sair()">Sair</button>
-            <button type="button" class="recuperar" (click)="recuperarSenha()">Recuperar senha</button>
-        </fieldset>
-    </form>
-</div>
-
-
-<div>
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
-            <mat-label>Favorite food</mat-label>
-            <input matInput placeholder="Ex. Pizza" value="Sushi">
-        </mat-form-field>
+            <legend>Login de usuário</legend>
+            <form acaoLogin="ngForm">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Login</mat-label>
+                    <input matInput placeholder="Ex. adm" type="email" name="login" id="login" [(ngModel)]="login.email"
+                        #email="ngModel" [ngModelOptions]="{standalone: true}" required>
+                </mat-form-field>
     
-        <mat-form-field class="example-full-width">
-            <mat-label>Leave a comment</mat-label>
-            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-        </mat-form-field>
-    </form>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Senha</mat-label>
+                    <input matInput placeholder="Ex. adm" type="password" name="senha" id="senha" [(ngModel)]="login.senha"
+                        #senha="ngModel" [ngModelOptions]="{standalone: true}" required>
+                </mat-form-field>
+                <button mat-button type="button" (click)="entrar()">Entrar</button>
+                <button mat-button type="button" (click)="sair()">Sair</button>
+                <button mat-button type="button" (click)="recuperarSenha()">Recuperar senha</button>
+            </form>
+        </fieldset>
+    </div>
 </div>

@@ -5,13 +5,14 @@ import { LoginService } from '../../shared/services/login.service';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [RouterLink, FormsModule, MatFormFieldModule,
-     MatInputModule, CommonModule],
+     MatInputModule, CommonModule, MatButtonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
